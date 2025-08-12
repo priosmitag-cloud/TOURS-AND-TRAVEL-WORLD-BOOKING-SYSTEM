@@ -1,0 +1,19 @@
+.tour-card {
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+
+.tour-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0;
+}
+
+.btn.w-fit {
+  width: fit-content;
+}

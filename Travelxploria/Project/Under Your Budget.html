@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        li {
+            margin: 5px;
+
+        }
+
+        #myVideo {
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: larger;
+            color: black;
+        }
+
+        .insight {
+            border-radius: 20px;
+        }
+
+        .zoom {
+            transition: transform .2s;
+        }
+
+        .zoom:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        #id{
+            msg{
+               border-radius: 5px;
+               align-items: center;
+               text-align: center;
+            }
+        }
+
+        /* body::-webkit-scrollbar {
+            display: none;
+        } */
+    </style>
+</head>
+
+
+<body>
+    
+    <!-- under your budget -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span style="text-align: center; padding: 90px;">
+                    <h1 style="color: rgb(216, 73, 97); padding-top: 50px;">Under Your Budget</h1>
+                    <p style="text-align: center; ">
+                    Discover incredible travel experiences without stretching your wallet. Whether you're dreaming of
+                    vibrant city escapes, serene beaches, or mountain retreats, we bring you handpicked destinations
+                    that combine value and adventure. Explore more, spend less, and make unforgettable memories—all
+                    within your budget.</p>
+                </span>
+            </div>
+            <div class="col-12 ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner p-5">
+                        <div class="carousel-item active ">
+                            <img src="..\Under Your Budget\Budget 200000.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\Under Your Budget\Budget 250000.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\Under Your Budget\Budget 50000.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\Under Your Budget\Budget 75000.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\Under Your Budget\Budget 100000.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\Under Your Budget\Budget 150000.webp" class="d-block w-100" alt="..." style="border-radius: 20px;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                            style="background-color: rgb(25, 18, 9);"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="background-color: rgb(30, 20, 7);"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

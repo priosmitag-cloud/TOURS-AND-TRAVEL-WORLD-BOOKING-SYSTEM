@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travelxplaria</title>
+</head>
+
+<body>
+  <!-- Embed pages -->
+  <iframe class="auto-frame" src="cover.html" width="100%" style="border:none;"></iframe>
+  <iframe src="Popular Destination.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Incredible India.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Escape & Explore Europe.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Explore Dubai & Abudhabi.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Explore South East Asia.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Recendly Booked.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Mystic Himalayas.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="http://localhost/travelxploria/project/pick%20Travel%20Vibe.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="http://localhost/travelxploria/project/Highlights%20&%20Hidden%20Gems.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="Beyond the Blue.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe class="auto-frame" src="Budget Packages.html" width="100%" style="border:none;"></iframe>
+  <iframe class="auto-frame" src="Our Top Destination.html" width="100%" style="border: none;"></iframe>
+  <iframe src="Travelxplaria's Postcard.html" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe id="budgetFrame" src="Under Your Budget.html" width="100%" style="border:none;"></iframe>
+  <iframe class="auto-frame" src="http://localhost/travelxploria/project/news%20insight.html" width="100%" style="border:none;"></iframe>
+  <iframe class="auto-frame" src="Our Seasonal Offers.html" width="100%" style="border: none;"></iframe>
+  <iframe class="auto-frame" src="The Ultimate Guide to Guest Reviews.html" width="100%" style="border: none;"></iframe>
+  <iframe class="auto-frame" src="Footer.html" width="100%" style="border:none;"></iframe>
+
+
+  <script>
+    document.querySelectorAll('.auto-frame').forEach(frame => {
+      frame.onload = function () {
+        this.style.height = this.contentWindow.document.body.scrollHeight + 'px';
+      };
+    });
+
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+
+    document.getElementById('budgetFrame').onload = function() {
+    setTimeout(() => resizeIframe(this), 300);
+};
+
+  </script>
+
+</body>
+
+</html>

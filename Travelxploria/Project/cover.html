@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>TravelXploria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 25px;
+            padding: 6px 15px;
+            width: 280px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding-left: 8px;
+            font-size: 14px;
+        }
+
+        .search-bar i {
+            font-size: 14px;
+        }
+
+        .phone-btn {
+            background: #d7f8d0;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px 0;
+        }
+
+        .main-nav a {
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .main-nav a:hover {
+            color: orange;
+        }
+
+        .dropdown-btn {
+            background: orange;
+            color: white;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        #myVideo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top bar -->
+    <div class="container-fluid top-bar"
+        style="position: absolute; width: 100%; z-index: 10; background: rgba(0,0,0,0.5);">
+        <div class="row align-items-center py-2">
+            <div class="col-auto">
+                <img src="logo.webp" alt="" style="height:50px;">
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <form class="d-flex search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Explore & Discover" aria-label="Search">
+                </form>
+            </div>
+
+            <div class="col-auto">
+                <div class="phone-btn">
+                    +91 55352112251
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Top bar -->
+
+
+    <!-- Main nav -->
+    <div class="container-fluid main-nav" style="position: absolute; top:65px; z-index: 9;">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                        style="background-color: azure; border-radius: 50px; color: black;">
+                                        Popular Destination
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="all.html" target="mainFrame">Top Tour Packages</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost/travelxploria/project/contact_us.php" target="mainFrame">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link active" href="all.html" target="mainFrame">Around The World</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="all.html" target="mainFrame">Domestic Tours</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="all.html" target="mainFrame">Packages By Season</a></li>
+                                <li class="nav-item"><a class="nav-link" href="all.html" target="mainFrame">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="all.html" target="mainFrame">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="http://localhost/travelxploria/project/contact_us.php" target="mainFrame">Register</a></li>
+                                <li class="nav-item"><a class="nav-link" href="http://localhost/travelxploria/project/customer_info.php" target="mainFrame">Edit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- END Main nav -->
+
+
+    <!-- Video -->
+    <div class="col d-block d-flex">
+        <div id="flex" class="modal-fullscreen">
+            <video autoplay muted loop id="myVideo">
+                <source src="Cover.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
